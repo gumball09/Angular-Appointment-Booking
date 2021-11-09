@@ -1,0 +1,6 @@
+api/node_modules
+api/.*
+app/node_modules
+app/.*
+api/*.lock
+app/*.lock
