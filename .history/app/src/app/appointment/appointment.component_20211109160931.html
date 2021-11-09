@@ -1,0 +1,10 @@
+<mat-toolbar *ngIf="successMsg" color="accent">{{successMsg}}</mat-toolbar>
+<mat-toolbar *ngIf="errorMsg" color="warn">{{errorMsg}}</mat-toolbar>
+
+<div class="form-container">
+    <form (submit)="createAppointment()">
+        <mat-form-field>
+            
+        </mat-form-field>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<mat-toolbar *ngIf="successMsg" color="accent">{{successMsg}}</mat-toolbar>
+<mat-toolbar *ngIf="errorMsg" color="warn">{{errorMsg}}</mat-toolbar>
+
+<div *ngIf="!loading">
+    <table mat-table [dataSource]="appointments" class="mat-elevation-z8">
+        <ng-container matColumnDef="appointmentDate"> 
+            <th mat-header-cell  *matHeaderCellDef>Appointment Date</th>
+            <td mat-cell *matCellDef="let appointment"> {{appointment.appointmentDate}}</td/>
+        </ng-container>
+        <ng
+    </table>>
+</div>
